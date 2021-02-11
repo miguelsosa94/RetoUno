@@ -12,6 +12,8 @@ body {
     background-repeat: no-repeat;
     overflow: hidden;
     min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
 }
 
 header {
@@ -39,13 +41,14 @@ header {
 
 .main-text h1 {
     font-family: 'Poppins', Arial;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 40px;
 }
 
 .main-text p {
     font-family: 'Open Sans', Arial;
     font-weight: 400;
+    font-size: 18px;
 }
 
 .main-text button {
@@ -87,4 +90,41 @@ header {
 
 .social-link.facebook {
     background-image: url("../images/facebook.svg");
+}
+
+@media screen and (max-width: 375px) {
+    header {
+        display: block;
+        height: auto;
+    }
+    header img {
+        margin: auto;
+        display: inherit;
+    }
+    .main {
+        display: block;
+        padding: 20px;
+    }
+    .main .mockup {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .mockup img {
+        width: 100%;
+    }
+    .main .main-text {
+        width: 100%;
+        text-align: center;
+    }
+    .main-text h1 {
+        font-size: 27px;
+    }
+    .main-text p {
+        font-family: 'Open Sans', Arial;
+        font-weight: 400;
+        font-size: 17px;
+    }
+    .social {
+        justify-content: center;
+    }
 }
